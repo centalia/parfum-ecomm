@@ -1,6 +1,6 @@
+@use '@a1rth/css-normalize';
 @use '@/styles/scss/_mixin' as *;
 @use '@/styles/scss/_globals' as *;
-@import '@a1rth/css-normalize';
 
 .banner-container{
     width: 100vw;
@@ -13,6 +13,9 @@
     align-items: center;
     &:text{
         
+    }
+    &:icon-cancel{
+
     }
 }
 
