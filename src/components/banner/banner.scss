@@ -1,0 +1,25 @@
+@use '@/styles/scss/_mixin' as *;
+@use '@/styles/scss/_globals' as *;
+@import '@a1rth/css-normalize';
+
+.banner-container{
+    width: 100vw;
+    height: 40px;
+    background-color: $color-green;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &:text{
+        
+    }
+}
+
+.text{
+    @include font('Manrope', h6, regular, 120);
+}
+
+.icon_cancel{
+    
+}

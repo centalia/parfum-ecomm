@@ -1,0 +1,29 @@
+@use '@/styles/scss/_mixin' as *;
+@use '@/styles/scss/_globals' as *;
+@import '@a1rth/css-normalize';
+
+.header-container{
+    width: 1360px;
+    height: 58px;
+
+    display: flex;
+    margin: 24px 0;
+    justify-content: space-between;
+
+    background-color: $color-white;
+    background: url('/src/assets/svg/logo.svg') no-repeat center;
+    padding: 17px 40px;
+    border: {
+        width: 1px;
+        style: solid;
+        color: black;
+        radius: 80px
+    }         
+}
+
+.nav-left,
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    gap: 24px
+}
