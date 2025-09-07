@@ -4,10 +4,7 @@ import '@/components/banner/banner.scss';
 document.querySelector('#banner').innerHTML = 
 `
     <div class="banner-container"> 
-        <div class="banner-container__text">
-            <p class="text">Just Restocked | Shop Our Fragrance Collection</p>
-        </div>
-        <div class="banner-container__icon-cancel"></div>
-        <img src="/src/assets/svg/icon_cancal.svg"></img>
+        <p class="banner-container__text">Just Restocked | Shop Our Fragrance Collection</p>
+        <img class="banner-container__icon-cancel" src="/src/assets/svg/icon_cancal.svg"></img>
     </div>
 `

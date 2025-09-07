@@ -1,7 +1,6 @@
+@use '@a1rth/css-normalize';
 @use '@/styles/scss/_mixin' as *;
 @use '@/styles/scss/_globals' as *;
-@import '@a1rth/css-normalize';
-
 
 body{
     display: flex;
@@ -11,8 +10,9 @@ body{
     align-items: center;
 }
 
-.banner-container{
-    width: 100vw;
-    height: 40px;
-    background-color: $color-green;
+.class{
+    width: 1440px;
+    height: 3000px;
+    border: 1px solid black;
+    
 }

@@ -1,29 +1,49 @@
+@use '@a1rth/css-normalize';
 @use '@/styles/scss/_mixin' as *;
 @use '@/styles/scss/_globals' as *;
-@import '@a1rth/css-normalize';
+
+.header{
+    position: absolute;
+    top: 40;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
 
 .header-container{
     width: 1360px;
     height: 58px;
-
     display: flex;
-    margin: 24px 0;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+    border-radius: 80px;
+    margin-top: 24px;
+}
+.nav__list{    
+    display: flex;
+    margin: 0;
     justify-content: space-between;
+    width: 100%;
 
     background-color: $color-white;
     background: url('/src/assets/svg/logo.svg') no-repeat center;
     padding: 17px 40px;
     border: {
-        width: 1px;
-        style: solid;
-        color: black;
+        style: none;
         radius: 80px
-    }         
-}
-
-.nav-left,
-.nav-right{
-    display: flex;
-    flex-direction: row;
-    gap: 24px
+    }       
+    &-left,
+    &-right{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        
+        @include font("Manrope", xsmall, bold, normal, 140);
+        letter-spacing: 0.1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }

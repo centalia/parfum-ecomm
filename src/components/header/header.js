@@ -3,16 +3,21 @@ import '@/components/header/header.scss';
 
 document.querySelector('#header').innerHTML = 
 `
-    <div class="header-container">
-        <ul class="nav-left">
-            <li class="nav-item">SHOP</li> 
-            <li class="nav-item">ABOUT</li>
-        </ul>
-        <div class="brand"></div>
-        <ul class="nav-right">
-            <li class="nav-item">BLOG</li> 
-            <li class="nav-item">CONTACT</li>
-            <li class="nav-item"><img src="/src/assets/svg/icon_shopping_bag.svg"></img></li>
-        </ul>
+    <div class="header">
+        <div class="header-container">
+            <nav class="nav__list">
+                <ul class="nav__list-left">
+                    <li class="nav__list-item">Shop</li> 
+                    <li class="nav__list-item">About</li>
+                </ul>
+                <div class="brand"></div>
+                <ul class="nav__list-right">
+                    <li class="nav__list-item">Blog</li> 
+                    <li class="nav__list-item">Contact</li>
+                    <li class="nav__list-item"><img src="/src/assets/svg/icon_shopping_bag.svg"></img></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
 ` 

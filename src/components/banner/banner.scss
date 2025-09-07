@@ -9,20 +9,17 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    &:text{
-        
+
+    padding: 8px 30px;
+    position: relative;
+    z-index: 1001;
+    &__text{
+        @include font('Manrope', h6, regular, normal,120);
+        margin: 0 auto;
     }
-    &:icon-cancel{
-
+    &__icon-cancel{
+        cursor: pointer;
     }
-}
-
-.text{
-    @include font('Manrope', h6, regular, 120);
-}
-
-.icon_cancel{
-    
 }

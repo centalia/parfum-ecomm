@@ -1,0 +1,51 @@
+@use "@a1rth/css-normalize";
+@use "@/styles/scss/_mixin" as *;
+@use "@/styles/scss/_globals" as *;
+
+.video-banner-container {
+  width: 1440px;
+  height: 768px;
+  position: relative;
+}
+
+.video-banner {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 36px;
+  width: 100%;
+  
+  &__text {
+    display: inline;
+    &-normal{
+      @include font("Sentient", h1, regular, normal, 100);
+      color: $color-white;
+    }
+    &-italic{
+      @include font("Sentient", h1, regular, italic, 100);
+      color: $color-white;
+    }
+  }
+  &__btn{
+    width: 216px;
+    height: 41px;
+    border: {
+      style: none;
+      radius: 32px;
+    } 
+    &-text{
+      @include font("Manrope", xsmall, bold, normal, 140);
+      letter-spacing: 0.1em;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-black;
+    }
+    
+  }
+}
